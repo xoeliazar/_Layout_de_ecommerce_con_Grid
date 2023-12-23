@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(./img/lana_del_rey_facebook_cover_header_portada_by_brunocoelho12_d7brc5o-fullview.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 6px;
+  padding-left: 30px;
+  background-color: #e5dde6;
+  font-family: "Open Sans", sans-serif;
+}
+.sidebar p {
+  font-size: 20px;
+}
+
+img {
+  height: 23em;
+  width: 23em;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0a0c3;
+  font-family: "Open Sans", sans-serif;
+
+  padding: 10px;
+}
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+button {
+  width: 80px;
+  height: 20px;
+  background-color: #e5dde6;
+  border: solid #9bfae0;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: auto auto;
+  background-color: #e5dde6;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  margin: 5px;
+}
